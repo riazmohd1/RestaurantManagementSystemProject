@@ -92,7 +92,7 @@ public class Inventory extends ReadandWriteFile {
         for (String str : this.arrayofData) {
                 String[] str1 = str.split(" ");
             IngredientsEnum ingredientsEnum = IngredientsEnum.valueOf(str1[0]);
-            ingredientsEnum.updateUnitInformation(Double.parseDouble(str1[1]),Double.parseDouble(str1[2]));;
+            ingredientsEnum.updateUnitInformation(Double.parseDouble(str1[1]),Double.parseDouble(str1[2]));
         }
     }
     public static String convertStringArrayToString(String[] strArr, String delimiter) {
@@ -146,9 +146,9 @@ public class Inventory extends ReadandWriteFile {
                     if (Ingredients[j].contains(item)) {
                         String[] str1 = Ingredients[j].split(" ");
                         str1[1] = String.valueOf(Double.parseDouble(str1[1]) + Double.parseDouble(quantity));
-                        StringBuffer sb = new StringBuffer();
-                        sb.append(str1[0] + " " + str1[1] + " " + str1[2]);
-                        Ingredients[j] = String.valueOf(sb);
+                        StringBuffer stringBuffer = new StringBuffer();
+                        stringBuffer.append(str1[0] + " " + str1[1] + " " + str1[2]);
+                        Ingredients[j] = String.valueOf(stringBuffer);
                     }
                 }
                 price += priceVal;
@@ -169,9 +169,10 @@ public class Inventory extends ReadandWriteFile {
                     for(String str : ingredientstoBuy){
                         if(str!=null){
                             String[] str1 = str.split(" ");
-                            if(!str1[0].equals("")){
+                            if(!str1[0].trim().equals(" ")){
                                 IngredientsEnum ingredientsEnum = IngredientsEnum.valueOf(str1[0].trim());
-                                ingredientsEnum.setAvailableUnits(Double.parseDouble(str1[1]));;
+                                double availableUnits = ingredientsEnum.getAvailableUnits();
+                                ingredientsEnum.setAvailableUnits(availableUnits+Double.parseDouble(str1[1]));
                             }
                         }
 

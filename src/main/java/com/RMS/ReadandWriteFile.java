@@ -25,7 +25,7 @@ public class ReadandWriteFile implements RestaurantManagementSystem{
 
         try {
             File myObj = new File(".");
-            String basePath = myObj.getCanonicalPath();;
+            String basePath = myObj.getCanonicalPath();
             //System.out.println(basePath);
             myObj = new File(basePath+"\\resource\\"+fileName);
             // File myObj = new File("accounts.txt");
@@ -45,9 +45,11 @@ public class ReadandWriteFile implements RestaurantManagementSystem{
     }
 
     public boolean writeData(String fileName, String data) {
-        Boolean status = false;
+        boolean status = false;
         try {
-            FileWriter myWriter = new FileWriter("C:\\Users\\moriaz\\Desktop\\Riaz\\learning\\prep4t\\workspace\\RestaurantManagementSystem\\resource\\" + fileName);
+            File myObj = new File(".");
+            String basePath = myObj.getCanonicalPath();
+            FileWriter myWriter = new FileWriter(basePath+"\\resource\\"+fileName);
             myWriter.write(data);
             myWriter.close();
             //System.out.println("Successfully wrote to the file.");
