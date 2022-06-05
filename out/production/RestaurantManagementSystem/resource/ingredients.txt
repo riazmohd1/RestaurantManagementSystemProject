@@ -1,0 +1,13 @@
+Tomato 8.0 50
+Potato 2.5 30
+Onions 2.0 45
+Batter 1.0 90
+Spices 2.2 100
+Milk 2 50
+CoffeePowder 7 30
+TeaLeaves 6 40
+Oregano 3 10
+Cheese 6.0 150
+Yoghurt 2 30
+Bread 26.0 3
+Capsicum 2.0 10
