@@ -2,29 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4af11f-fe2e-4955-880c-6fbb93576d2b" name="Changes" comment="update post code review and feedback">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rms/salesnexpenses/TotalExpenses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/accounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/ingredients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/ingredients.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ReadandWriteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/RestaurantManagementApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/RestaurantManagementSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/TotalExpenses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/TotalSales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/accounts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/ingredients.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/receipe.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/accountsmgmt/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/accountsmgmt/Accounts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/inventorymgmt/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/inventorymgmt/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ordermgmt/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ordermgmt/Orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/Enums/IngredientsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/enums/IngredientsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/Enums/RecipeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/enums/RecipeDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/ReadandWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/ReadandWriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/RestaurantManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/main/RestaurantManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/RestaurantManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/RestaurantManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/TotalExpenses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/TotalSales.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/accountsmgmt/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/accountsmgmt/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/inventorymgmt/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/inventorymgmt/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/ordermgmt/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/ordermgmt/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/ingredients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/ingredients.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/receipe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/receipe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rms/enums/IngredientsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/enums/IngredientsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rms/inventorymgmt/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/inventorymgmt/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rms/main/RestaurantManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/main/RestaurantManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rms/ordermgmt/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/ordermgmt/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/ReadandWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/ReadandWriteFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654430159786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update post code review and feedback">
+      <created>1656079651453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656079651453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

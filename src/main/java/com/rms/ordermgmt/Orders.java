@@ -89,7 +89,6 @@ public class Orders extends ReadandWriteFile {
         String sales = dishName+" "+quantity+" "+price*Integer.parseInt(quantity);
         String[] totalAvailableSalesList = totalSales.getTotalSales();
         if(totalAvailableSalesList!=null && totalAvailableSalesList.length>=1){
-            System.out.println("totalAvailableSalesList: "+totalAvailableSalesList.length);
             for (int k = 0; k < totalAvailableSalesList.length; k++) {
                 if (totalAvailableSalesList[k].contains(dishName)) {
                     String[] str1 = totalAvailableSalesList[k].split(" ");
@@ -147,7 +146,7 @@ public class Orders extends ReadandWriteFile {
             else{
                 Ingredients =  inventory.getArrayofData();
                 RecipeDetails recipeEnum = RecipeDetails.valueOf(dishName);
-                int price = recipeEnum.getPrice();
+                price = recipeEnum.getPrice();
                 HashMap<String,Double> recipeMap = recipeEnum.getRecipeMap();
                 for (String name : recipeMap.keySet()) {
                     requiredQuantity = recipeMap.get(name) * Double.parseDouble(quantity);

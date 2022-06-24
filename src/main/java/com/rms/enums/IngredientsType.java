@@ -13,7 +13,6 @@ public enum IngredientsType {
     Cheese(4,150),
     Yoghurt(2,30),
     Bread(30,3),
-    Toast(0,0),
     Capsicum(2,10);
 
     IngredientsType(double availableUnits, double pricePerUnit){

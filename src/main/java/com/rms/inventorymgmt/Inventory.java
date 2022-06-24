@@ -4,6 +4,8 @@ import src.main.java.com.rms.enums.IngredientsType;
 import src.main.java.com.rms.readandwrite.ReadandWriteFile;
 import src.main.java.com.rms.salesnexpenses.TotalExpenses;
 import src.main.java.com.rms.accountsmgmt.Accounts;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Inventory extends ReadandWriteFile {
     private String fileName = "ingredients.txt";
@@ -12,7 +14,7 @@ public class Inventory extends ReadandWriteFile {
     private String[] totalExpensesList;
     private double totalExpenses;
     IngredientsType ingredientsEnum;
-    String[] Ingredients =  getArrayofData();
+    String[] Ingredients;
     double availableBalance;
     int price;
     String[] ingredientstoBuy;
@@ -107,7 +109,15 @@ public class Inventory extends ReadandWriteFile {
         try {
             Scanner scan = new Scanner(System.in);
             displayIngredients();
+            Ingredients =  getArrayofData();;
             ingredientstoBuy = new String[Ingredients.length];
+            String[] currentTotalExpensesList = totalExpenses.getTotalExpensesList();
+            int ctelLength = 0;
+            if(currentTotalExpensesList!=null && currentTotalExpensesList.length>0){
+                ctelLength = currentTotalExpensesList.length-1;
+                System.arraycopy(currentTotalExpensesList,0,ingredientstoBuy,0,currentTotalExpensesList.length);
+            }
+
             int i = 0;
             while (i < Ingredients.length) {
                 double pricePerQuantity = 0.0;
@@ -119,7 +129,7 @@ public class Inventory extends ReadandWriteFile {
                     IngredientsType ingredientsEnum = IngredientsType.valueOf(item);
                     pricePerQuantity = ingredientsEnum.getPricePerUnit();
                     double priceVal = Double.parseDouble(quantity) * pricePerQuantity;
-                    ingredientstoBuy[i] = item + " " + quantity + " " + priceVal;
+                    ingredientstoBuy[i+ctelLength] = item + " " + quantity + " " + priceVal;
                     for (int j = 0; j < Ingredients.length; j++) {
                         if (Ingredients[j].contains(item)) {
                             String[] str1 = Ingredients[j].split(" ");
@@ -128,24 +138,25 @@ public class Inventory extends ReadandWriteFile {
                             stringBuffer.append(str1[0] + " " + str1[1] + " " + str1[2]);
                             Ingredients[j] = String.valueOf(stringBuffer);
                             price += priceVal;
-                            System.out.println("Do you want to add more items? Yes/No");
-                            String decision = scan.nextLine();
-                            if (decision.equalsIgnoreCase("Yes"))
-                                i++;
-                            else
-                                break;
-                        }
                         }
                     }
-                if (price > 0) {
-                    availableBalance = accounts.getBalance();
-                    if (availableBalance < price) {
-                        statusVal = false;
-                    } else {
-                        updateIngredients(totalExpenses, accounts);
-                        statusVal = true;
 
-                    }
+                }
+                System.out.println("Do you want to add more items? Yes/No");
+                String decision = scan.nextLine();
+                if (decision.equalsIgnoreCase("Yes"))
+                    i++;
+                else
+                    break;
+            }
+            if (price > 0) {
+                availableBalance = accounts.getBalance();
+                if (availableBalance < price) {
+                    statusVal = false;
+                } else {
+                    updateIngredients(totalExpenses, accounts);
+                    statusVal = true;
+
                 }
             }
         }

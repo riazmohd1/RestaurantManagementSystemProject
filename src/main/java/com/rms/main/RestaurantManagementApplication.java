@@ -21,14 +21,13 @@ public class RestaurantManagementApplication {
     public void initialize(){
         totalExpenses = new TotalExpenses();
         totalSales = new TotalSales();
-        Accounts accounts  = new Accounts();
-        String availableBalance = accounts.readData(accounts.getFileName());
+        accounts  = new Accounts();
+        double availableBalance = Double.parseDouble((accounts.readData(accounts.getFileName())));
         System.out.println("availableBalance: "+availableBalance);
-        Inventory inventory = new Inventory();
+        inventory = new Inventory();
         String inventoryList = inventory.readData(inventory.getFileName());
-        Orders orders = new Orders();
+        orders = new Orders();
         String data2 = orders.readData(orders.getFileName());
-
     }
     public void readInputs(){
         int inputVal = 0;
