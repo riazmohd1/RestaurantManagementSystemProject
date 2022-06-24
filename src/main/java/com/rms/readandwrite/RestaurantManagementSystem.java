@@ -1,4 +1,4 @@
-package src.main.java.com.RMS;
+package src.main.java.com.rms.readandwrite;
 
 public interface RestaurantManagementSystem {
 

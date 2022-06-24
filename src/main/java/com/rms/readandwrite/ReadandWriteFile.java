@@ -1,9 +1,9 @@
-package src.main.java.com.RMS;
+package src.main.java.com.rms.readandwrite;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class ReadandWriteFile implements RestaurantManagementSystem{
+public class ReadandWriteFile implements RestaurantManagementSystem {
     private String[] arrayofData;
     private String data = "";
 

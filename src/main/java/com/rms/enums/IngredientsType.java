@@ -1,10 +1,7 @@
-package src.main.java.com.RMS.Enums;
+package src.main.java.com.rms.enums;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-public enum IngredientsEnum {
-    Tomato(10, 50),
+public enum IngredientsType {
+    Tomato(0, 50),
     Potato(5,30),
     Onions(4,45),
     Batter(2,90),
@@ -16,9 +13,10 @@ public enum IngredientsEnum {
     Cheese(4,150),
     Yoghurt(2,30),
     Bread(30,3),
+    Toast(0,0),
     Capsicum(2,10);
 
-    IngredientsEnum(double availableUnits, double pricePerUnit){
+    IngredientsType(double availableUnits, double pricePerUnit){
         this.availableUnits = availableUnits;
         this.pricePerUnit = pricePerUnit;
 
@@ -38,9 +36,6 @@ public enum IngredientsEnum {
         return pricePerUnit;
     }
 
-    public void setPricePerUnit(double pricePerUnit) {
-        this.pricePerUnit = pricePerUnit;
-    }
     public void updateUnitInformation(double availableUnits,double pricePerUnit){
         this.availableUnits = availableUnits;
         this.pricePerUnit = pricePerUnit;
@@ -49,8 +44,8 @@ public enum IngredientsEnum {
 
     public static boolean isIngredientAvailable(String ingredientName) throws IllegalArgumentException{
        try{
-           IngredientsEnum ingredientsEnum = IngredientsEnum.valueOf(ingredientName);
-            for(IngredientsEnum name : IngredientsEnum.values()){
+           IngredientsType ingredientsEnum = IngredientsType.valueOf(ingredientName);
+            for(IngredientsType name : IngredientsType.values()){
                 if(name.equals(ingredientsEnum)) {
                     return true;
                 }
@@ -62,8 +57,7 @@ public enum IngredientsEnum {
         }
         return false;
     }
-    public static IngredientsEnum[] getIngredientsEnum(){
-        IngredientsEnum[] ingredientsArray = IngredientsEnum.values();
-        return ingredientsArray;
+    public static IngredientsType[] getIngredientsEnum(){
+        return IngredientsType.values();
     }
 }

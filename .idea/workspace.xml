@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac4af11f-fe2e-4955-880c-6fbb93576d2b" name="Changes" comment="update post some basic testing">
+    <list default="true" id="ac4af11f-fe2e-4955-880c-6fbb93576d2b" name="Changes" comment="update post code review and feedback">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rms/salesnexpenses/TotalExpenses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/ingredients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/resource/ingredients.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ReadandWriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ReadandWriteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ReadandWriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/RestaurantManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/RestaurantManagementSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/TotalExpenses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/TotalSales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/accountsmgmt/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/accountsmgmt/Accounts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/inventorymgmt/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/inventorymgmt/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/ReadandWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/RMS/ReadandWriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/inventorymgmt/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/RMS/inventorymgmt/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ordermgmt/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantManagementSystem/src/main/java/com/RMS/ordermgmt/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/Enums/IngredientsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/enums/IngredientsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/Enums/RecipeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/enums/RecipeDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/ReadandWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/ReadandWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/RestaurantManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/main/RestaurantManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/RestaurantManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/readandwrite/RestaurantManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/TotalExpenses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/TotalSales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/accountsmgmt/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/accountsmgmt/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/inventorymgmt/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/inventorymgmt/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/RMS/ordermgmt/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rms/ordermgmt/Orders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +60,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RestaurantManagementApplication">
+  <component name="RunManager" selected="Application.src.main.java.com.rms.main.RestaurantManagementApplication">
     <configuration name="Accounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.java.com.RMS.accountsmgmt.Accounts" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.com.rms.accountsmgmt.Accounts" />
       <module name="RestaurantManagementSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.com.RMS.accountsmgmt.*" />
+          <option name="PATTERN" value="src.main.java.com.rms.accountsmgmt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientsEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.java.com.RMS.Enums.IngredientsEnum" />
+    <configuration name="src.main.java.com.rms.enums.IngredientsType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.java.com.rms.enums.IngredientsType" />
       <module name="RestaurantManagementSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.com.RMS.Enums.*" />
+          <option name="PATTERN" value="src.main.java.com.rms.enums.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.java.com.RMS.RestaurantManagementApplication" />
+    <configuration name="src.main.java.com.rms.main.RestaurantManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.java.com.rms.main.RestaurantManagementApplication" />
       <module name="RestaurantManagementSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.com.RMS.*" />
+          <option name="PATTERN" value="src.main.java.com.rms.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,9 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestaurantManagementApplication" />
-        <item itemvalue="Application.IngredientsEnum" />
-        <item itemvalue="Application.Accounts" />
+        <item itemvalue="Application.src.main.java.com.rms.main.RestaurantManagementApplication" />
+        <item itemvalue="Application.src.main.java.com.rms.enums.IngredientsType" />
       </list>
     </recent_temporary>
   </component>
@@ -101,6 +116,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653846490743</updated>
     </task>
+    <task id="LOCAL-00001" summary="update post some basic testing">
+      <created>1654430159786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654430159786</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update post some basic testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="update post some basic testing" />
+    <MESSAGE value="update post code review and feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="update post code review and feedback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
